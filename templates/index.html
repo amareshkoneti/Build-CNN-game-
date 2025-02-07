@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CNN Game - Label and Image Upload</title>
+  <link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Welcome to the CNN Game!</h1>
+    <p>Define labels and upload images to train your CNN model.</p>
+
+    <!-- Label Definition Section -->
+    <section class="label-section">
+      <h2>Define Labels</h2>
+      <input type="text" id="label-input" placeholder="Enter label name (e.g., Cat)">
+      <button id="add-label-btn">Add Label</button>
+      <div id="labels-container"></div>
+    </section>
+
+    <!-- Label Cards with Image Upload -->
+    <section class="label-cards-section">
+      <h2>Labels & Image Upload</h2>
+      <div id="upload-sections-container"></div>
+    </section>
+
+    <!-- Display Uploaded Images -->
+    <section class="uploaded-images-section">
+      <h2>Uploaded Images</h2>
+      <div id="uploaded-images-container"></div>
+    </section>
+
+    <a href="{{ url_for('pre') }}" class="btn-link">Go to Next Level for Preprocessing</a>
+  </div>
+
+  <script src="static/scripts.js"></script>
+</body>
+</html>
